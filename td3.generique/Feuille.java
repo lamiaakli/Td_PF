@@ -1,8 +1,9 @@
-package Généralisation;
+
+package td3.generique;
 
 import java.util.Set;
 
-public class Feuille<T extends Sommable<T> & Comparable<T>> implements Arbre<T> {
+public class Feuille<T extends Sommable<T>> implements Arbre<T> {
     private final T valeur;
 
     public Feuille(T valeur) {
@@ -27,7 +28,7 @@ public class Feuille<T extends Sommable<T> & Comparable<T>> implements Arbre<T> 
     @Override
     public T somme() {
         return valeur;
-    }
+    } 
 
     @Override
     public T min() {
@@ -45,3 +46,14 @@ public class Feuille<T extends Sommable<T> & Comparable<T>> implements Arbre<T> 
     }
 
 }
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

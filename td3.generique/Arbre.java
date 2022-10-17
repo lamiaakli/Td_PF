@@ -1,4 +1,5 @@
-public interface Arbre<T extends Sommable<T> & Comparable<T>> {
+package td3.generique;
+public interface Arbre<T extends Sommable<T>> {
     int taille();
 
     boolean contient(final T val);
